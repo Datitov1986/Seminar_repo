@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿
+using System.Security.Cryptography;
 using System;
 Random rand = new Random();
 //Создаем переменную для рандома
@@ -10,7 +11,7 @@ if (max < a2)
 {
     max = a2;
 }
-Console.WriteLine(max);
+Console.WriteLine("Ваше число: " + num + " большая цифра: " + max);
 //Оператор "И" &&
 //Оператор "ИЛИ" ||
 //Оператор "Не" !
