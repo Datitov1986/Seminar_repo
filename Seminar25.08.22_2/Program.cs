@@ -19,16 +19,18 @@
 
 Console.WriteLine("В какой четверти находится ваша точка?");
 int chetv = Convert.ToInt32(Console.ReadLine());
-point(chetv);
+Point(chetv);
 
-int point(int chetv);
+void Point(int chetv)
 {
     if(chetv == 1)
         Console.WriteLine("+et;+et");
-    if(chetv == 2)
+    else if(chetv == 2)
         Console.WriteLine("-et;+et");
-    if(chetv == 3)
+    else if(chetv == 3)
         Console.WriteLine("-et;-et");
-    if(chetv == 4)
+    else if(chetv == 4)
         Console.WriteLine("+et;-et");
+    else
+        Console.WriteLine("Нет такой четверти");
 }
