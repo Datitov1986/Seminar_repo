@@ -53,6 +53,71 @@ A (3,6); B (2,1) -> 5,09 A (7,-5); B (1,-1) -> 7,21
 // int count = 1;
 // SquareTable(N, count);
 
+// 4 задание А
+// Найти сумму и произведение элементов одномерного числового массива.
+
+using System;
+
+void ArrayCreation(int[] numbers)
+ {
+    int length = numbers.Length;
+    int index = 0;
+    while(index < length)
+     {
+        numbers[index] = new Random().Next(1,10);
+        index++;
+     }
+
+ }
+void PrintArray(int[] num)
+ {
+    int count = num.Length;
+    int position = 0;
+    while(position < count)
+     {
+        Console.Write(num[position] + ", ");
+        position++;
+     }
+ }
+
+int ArraySum(int[] numbers)
+ {
+    int index = 0;
+    int len = numbers.Length;
+    int summ = 0;
+    while(index < len)
+     {
+        summ = summ + numbers[index];
+        index++;
+     }
+    return summ;
+ }
+
+int ArrayComposition(int[] numbers)
+ {
+    int index = 0;
+    int len = numbers.Length;
+    int comp = 1;
+    while(index < len)
+     {
+        comp = comp * numbers[index];
+        index++;
+     }
+    return comp;
+ }
+
+int[] array = new int[5];
+ArrayCreation(array);
+PrintArray(array);
+ArrayComposition(array);
+Console.WriteLine();
+
+int sum = ArraySum(array);
+int com = ArrayComposition(array);
+Console.WriteLine("Сумма всех элементов массива = " + sum);
+Console.WriteLine("Произведение всех элемнтов массива = " + com);
+
+
 
 
 
