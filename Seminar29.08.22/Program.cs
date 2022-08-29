@@ -80,7 +80,38 @@
 
 /*
 5) Создайте массив А[12] с помощью генератора случайных чисел с элементами от –20 до 10 и выведите его на экран. Замените все отрицательные элементы массива числом 0.
+*/
+// int size = 12;
+// int[] array = new int[size];
+// ArrayCreation(array);
+// Console.WriteLine();
+// Replace(array);
 
+// void ArrayCreation(int[] array)
+//  {
+//     for(int index = 0; index < array.Length; index++)
+//      {
+//         array[index] = new Random().Next(-20,11); 
+//         Console.Write(array[index] + ", ");
+//      }
+//  }
+
+//  void Replace(int[] array)
+//  {
+//     for(int index = 0; index < array.Length; index++)
+//     {
+//         if(array[index] < 0)
+//         {
+//             array[index] = 0;
+//             Console.Write(array[index] + ", ");
+//         }
+//         else
+//             Console.Write(array[index] + ", ");
+//     }
+//  }
+
+
+/*
 6) Найти сумму всех элементов массива чисел, больших заданного числа. Размерность массива – 20. Заполнение массива осуществить случайными числами от 50 до 100
 7)Найти минимальный и максимальный элемент массива заполненного случайными числами. Размер массива - 10ж
 */
