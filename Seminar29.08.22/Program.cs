@@ -113,6 +113,24 @@
 
 /*
 6) Найти сумму всех элементов массива чисел, больших заданного числа. Размерность массива – 20. Заполнение массива осуществить случайными числами от 50 до 100
+*/
+
+int size = 20;
+int[] array = new int[size];
+ArrayCreation(array);
+
+void ArrayCreation(int[] array)
+ {
+    for(int index = 0; index < array.Length; index++)
+     {
+        array[index] = new Random().Next(50,101); 
+        Console.Write(array[index] + ", ");
+     }
+ }
+
+
+
+/*
 7)Найти минимальный и максимальный элемент массива заполненного случайными числами. Размер массива - 10ж
 */
 
