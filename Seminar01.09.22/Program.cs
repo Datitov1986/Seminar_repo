@@ -114,21 +114,40 @@
 [6 7 3 6] -> 36 21
 */
 
-int[] FillArray(int[] numbers)
- {
+// int[] FillArray(int[] numbers)
+//  {
     
-    for(int index = 0; index < numbers.Length; index++)
-    {
-        numbers[index] = new Random().Next(1,10);
-        Console.Write(numbers[index] + ", ");          
-    }
-    return numbers;
- }
+//     for(int index = 0; index < numbers.Length; index++)
+//     {
+//         numbers[index] = new Random().Next(1,10);
+//         Console.Write(numbers[index] + ", ");          
+//     }
+//     return numbers;
+//  }
 
-int[] Mult(int[] array)
+// int[] Mult(int[] array)
+// {
+//     int size = array.Length;
+//     for()
+// }
+
+// int[] array = new int[5];
+
+int[] array4 = new int[6];
+int[] array5 = new int[array4.Length / 2];
+
+for (int i = 0; i < array4.Length; i++)
 {
-    int size = array.Length;
-    for()
+    int number = new Random().Next(0, 10);
+    array4[i] = number;
+    Console.Write(array4[i] + ", ");
 }
 
-int[] array = new int[5];
+//int multiply = 1;
+
+for (int i = 0, j = array4.Length - 1; i < array4.Length / 2; i++, j--)
+{
+    array5[i] = array4[i] * array4[j];
+
+}
+Console.WriteLine("[{0}]", string.Join(", ", array5));
