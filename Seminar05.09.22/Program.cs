@@ -90,22 +90,68 @@
 //---------------------------------------------------------------------------------------------------------------------------
 
 //---------------------------------------------------------------------------------------------------------------------------
-/* Задача Напишите программу, которая будет преобразовывать десятичные числа в двоичные*/
+/* Задача 42 Напишите программу, которая будет преобразовывать десятичные числа в двоичные*/
 
 
-string UpdateToDouble(int num)
-{
-    string Binare = "";
-    while(num > 0)
-    {
-        Binare += num % 2; 
-        num = num / 2;  
+// string UpdateToDouble(int num)
+// {
+//     string Binare = "";
+//     while(num > 0)
+//     {
+//         Binare = num % 2 + Binare; 
+//         num = num / 2;  
         
-    }
-    return Binare;
-}
+//     }
+//     return Binare;
+// }
 
 
-Console.WriteLine(" Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(UpdateToDouble(num));
+// Console.WriteLine(" Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(UpdateToDouble(num));
+
+// Console.WriteLine(Convert.ToString(num,2));
+
+/* Не используя рекурсию напишите первые два числа фибоначчи */
+
+
+// int Read(string line)
+// {
+//     Console.WriteLine(line);
+//     return int.Parse(Console.ReadLine() ?? "");
+// }
+
+// int Fib(int n)
+// {
+//     int result = 0;
+//     if (n == 1 || n == 2)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         int first = 1, second = 1;
+//         for (int i = 3; i <= n; i++)
+//         {
+//             result = first + second;
+//             first = second;
+//             second = result;
+//         }
+//     }
+//     return result;
+// }
+
+// void Print(int n)
+// {
+//     Console.Write("Число Фибоначчи: ");
+//     for(int i = 1;i<n;i++)
+//     {
+//         Console.Write(Fib(i)+", ");
+//     }
+//     Console.Write(Fib(n));
+// }
+
+// int N = Read("Введите количество чисел Фибонначчи:");
+// Print(N);
+
+
